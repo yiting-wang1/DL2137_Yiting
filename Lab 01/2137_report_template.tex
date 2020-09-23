@@ -60,7 +60,7 @@
 %=========== Body  ====================================
 \begin{document}
 
-\title{ELC 2137 Lab 1: Git and LaTeX Intro}
+\title{ELC 2137 Lab 01: Git and LaTeX Intro}
 \author{Yiting Wang}
 
 \maketitle
@@ -68,26 +68,27 @@
 
 \section*{Summary}
 
-In this lab, it talk about two tools that are es-pecially suited for programming.  Git is a version con-trol software that helps you keep track of modifica-tions you make to a code project and collaboratewith others on that project.  LaTeX is a typesettinglanguage that can produce professional-looking doc-uments and makes including code very easy.
+	In this lab, it talk about two tools that are es-pecially suited for programming.  Git is a version con-trol software that helps you keep track of modifica-tions you make to a code project and collaboratewith others on that project.  LaTeX is a typesettinglanguage that can produce professional-looking doc-uments and makes including code very easy.
+
 
 
 \section*{Q\&A}
 
-\begin{enumerate}
-	\item What is your GitHub user name?
-	
-		yiting-wang1
-	
-	\item What  LaTeX  environment  produces  a  bulleted(non-numbered) list?
-	
-		The bulleted lists are produced by the itemize environment. Each entry must be preceded by the control sequence \verb|\item|.
-	
-	\item Write the equation \[ y(t) = 1/2 e^t \]  using Latex equation formatting.
-	
-		 \[ y(t) = 1/2 e^t \] 
-	
-	\item What is the shortcut key for compiling your Latex document?
-	
+	\begin{enumerate}
+		\item What is your GitHub user name?
+		
+			yiting-wang1
+		
+		\item What LaTeX environment produces a bulleted(non-numbered) list?
+		
+			The bulleted lists are produced by the itemize environment. Each entry must be preceded by the control sequence \verb|\item|.
+		
+		\item Write the equation \verb| y(t) = 1/2 e^t| using Latex equation formatting.
+		
+			  \[ y(t) = 1/2 e^t \] 
+		
+		\item What is the shortcut key for compiling your Latex document?
+		
 		\begin{itemize}
 			\item F5 -- compile to PDF
 			\item Starting typing a command, then use arrows to choose the desired auto-complete command, and press Enter.  For example, type \verb|\V| and the first item in the pop-up list should be the \verb|\Verilog| command.
@@ -109,51 +110,69 @@ In this lab, it talk about two tools that are es-pecially suited for programming
 			\end{itemize}
 		\end{itemize}
 
-\end{enumerate}
+	\end{enumerate}
+	
 	
 	
 \section*{Results}
 
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
+	Figure 1 is the replication of the table and figure shown in Figure 1.1 in Lab 1 Git and LaTex Intro. It  uses a single figure environment to ensure that the table andimage do not get separated.\\ 
+	\begin{figure}[ht]\centering
+		\begin{tabular}{c|c|c}
+			\toprule
+			Binary & Hex & Decimal \\
+			\midrule
+			0000 & 0 & 0 \\
+			0010 & 2 & 2 \\
+			0100 & 4 & 4 \\
+			0110 & 6 & 6 \\
+			1000 & 8 & 8 \\
+			1010 & A & 10 \\
+			\bottomrule
+		\end{tabular}\medskip
+		
+		\centering
+		\includegraphics[width=1.0\linewidth]{Lab1F1}
+		\caption{Table and simulation waveform to reproduce}
+		\label{fig:lab1table}
+	\end{figure}
+	
+	This part is using the trim and cropoptions for the \verb|\includegraphics| command to just get the part of the image people want. Figure 2 is the original one, and Figure 3 is the logo cropping the top and bottom.\\
+	\begin{figure}[ht]\centering
+		\includegraphics[width=1.0\textwidth]{Lab1Table}
+		\caption{This is the original logo.}
+		\label{fig:Lab1Table}
+	\end{figure}
+	
+	\begin{figure}[ht]\centering
+		\includegraphics[width=1.0\textwidth,trim=8cm 8cm 0cm 0cm,clip]{Lab1Table}
+		\caption{This is the logo cropping the top and bottom.}
+		\label{fig:another_image}
+	\end{figure}
+
+	Figure 3 is the picture after I commit these changes to my repo and push them toGitHub. In GHD, the the History tab to show me all of my commits thus far.\\
+	\begin{figure}[ht]\centering
+		\includegraphics[width=1.0\textwidth]{GitHub}
+		\caption{This is the screenshot of the GitHub History tab}
+		\label{fig:GitHub}
+	\end{figure}
+
+
 
 \section*{Code}
+	Here is the code including from examplecode.sv in the Code section.\\
+	module example \\
+	\#(parameter BITS=4) \\
+	(\\
+	input [BITS-1:0] in0, in1,\\
+	input sel,\\
+	output [BITS-1:0] out\\
+	);\\
+	
+	// Choose in1 or in0\\
+	out = sel ? in1: in0; \\
+	endmodule
 
-\begin{figure}[ht]\centering
-	\begin{tabular}{c|c|c}
-		\toprule
-		Binary & Hex & Decimal \\
-		\midrule
-		0000 & 0 & 0 \\
-		0010 & 2 & 2 \\
-		0100 & 4 & 4 \\
-		0110 & 6 & 6 \\
-		1000 & 8 & 8 \\
-		1010 & A & 10 \\
-		\bottomrule
-	\end{tabular}\medskip
 
-	\centering
-	\includegraphics[width=0.7\linewidth]{Lab1F1}
-	\caption{Table and simulation waveform to reproduce}
-	\label{fig:lab1table}
-\end{figure}
-
-\begin{figure}[ht]\centering
-	\includegraphics[width=1\textwidth]{Lab1Table}
-	\caption{This is the original logo.}
-	\label{fig:original_logo}
-\end{figure}
-
-\begin{figure}[ht]\centering
-	\includegraphics[width=1\textwidth,trim=8cm 8cm 0cm 0cm,clip]{Lab1Table}
-	\caption{This is the logo cropping the top and bottom.}
-	\label{fig:another_image}
-\end{figure}
- 
-\begin{figure}[ht]\centering
-	\includegraphics[width=1\textwidth]{GitHub}
-	\caption{This is the screenshot of the GitHub History tab}
-	\label{fig:another_image}
-\end{figure}
 
 \end{document}
