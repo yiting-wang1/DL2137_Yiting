@@ -80,9 +80,12 @@
 			
 		\item How many input combinations would it take to exhaustively test the adder/subtractor?\\
 			16.\\
+			
 		\item Why were the combinations given in the truth table chosen?\\
-			Cause we have different combinations of inputs
+			Cause we can use 3 for add and 3 for subtracte to figure out the rule for how the two-bit adder/subtractor works\\
+		
 		\item Do the results from your adder/subtractor match what you would expect from theory? Explain any discrepancies.\\
+			The results are close to, but don’t exactly agree with the theory behind it. The MSB is different from what I expected. When the result should be a positive signed number, it shows negative; when the result should be a negative signed number, it shows positive.\\
 		
 	\end{enumerate}
 
@@ -90,21 +93,21 @@
 
 \section*{Results}
 
-	Figure 1 is the picture of my two bit adder/subtractor circuit, I built it based on the two bit adder/subtractor schematic.\\
+	Figure 1 is the picture of my two bit adder/subtractor circuit, I built it based on the two bit adder/subtractor schematic. I only add 2 XOR gates for B 2's compliment in two bit adder.\\
 	\begin{figure}[ht]\centering
 		\includegraphics[width=0.7\textwidth,trim=5cm 5cm 5cm 5cm,clip]{2-bitSubtractor}
 		\caption{The  two bit adder/subtractor Circuit}
 		\label{fig:2-bitSubtractor}
 	\end{figure}
 	
-	Figure 2 is the picture of my two-bit adder/subtractor schematic.\\
+	Figure 2 is the picture of my two-bit adder/subtractor schematic. I add 2 XOR gates for B 2's compliment before the B input in two bit adder.\\
 	\begin{figure}[ht]\centering
 		\includegraphics[width=1.0\textwidth]{Schematic}
 		\caption{The two-bit adder/subtractor schematic}
 		\label{fig:Schematic}
 	\end{figure}
 	
-	Figure 3 is the cricuit domonstration page. It has theERT and instructor signature.\\
+	Figure 3 is the cricuit domonstration page. It has the Expected Results Table and instructor signature.\\
 	\begin{figure}[ht]\centering
 		\includegraphics[width=1.0\textwidth]{Lab4Page}
 		\caption{The cricuit domonstration page}
