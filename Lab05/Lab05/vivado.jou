@@ -2,108 +2,12 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Sep 30 20:57:45 2020
-# Process ID: 2224
+# Start of session at: Thu Oct  1 11:03:06 2020
+# Process ID: 5012
 # Current directory: H:/DL2137_Yiting/Lab05/Lab05
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12996 H:\DL2137_Yiting\Lab05\Lab05\Lab05.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17072 H:\DL2137_Yiting\Lab05\Lab05\Lab05.xpr
 # Log file: H:/DL2137_Yiting/Lab05/Lab05/vivado.log
 # Journal file: H:/DL2137_Yiting/Lab05/Lab05\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project H:/DL2137_Yiting/Lab05/Lab05/Lab05.xpr
-update_compile_order -fileset sources_1
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-close [ open H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv w ]
-add_files H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv
-close [ open H:/DL2137_Yiting/Lab05/Lab05/addsub.sv w ]
-add_files H:/DL2137_Yiting/Lab05/Lab05/addsub.sv
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv] -no_script -reset -force -quiet
-remove_files  H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv
-create_fileset -simset sim_3
-set_property SOURCE_SET sources_1 [get_filesets sim_3]
-add_files -fileset sim_3 -norecurse H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv
-update_compile_order -fileset sim_3
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top addsub_test [get_filesets sim_3]
-set_property top_lib xil_defaultlib [get_filesets sim_3]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_3
-update_compile_order -fileset sources_1
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source fulladder_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-add_bp {H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv} 21
-run all
-remove_bps -file {H:/DL2137_Yiting/Lab05/Lab05/addsub_test.sv} -line 21
-run all
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_3 ]
-source addsub_test.tcl
-close_sim

@@ -1,9 +1,9 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../addsub.sv" \
-"../../../../fulladder.sv" \
-"../../../../halfadder.sv" \
-"../../../../addsub_test.sv" \
+"../../../../../addsub.sv" \
+"../../../../../fulladder.sv" \
+"../../../../../halfadder.sv" \
+"../../../../../addsub_test.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
