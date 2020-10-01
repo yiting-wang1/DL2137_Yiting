@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep 24 13:57:50 2020
+# Process ID: 11440
+# Current directory: H:/DL2137_Yiting/Lab05/Lab05
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3800 H:\DL2137_Yiting\Lab05\Lab05\Lab05.xpr
+# Log file: H:/DL2137_Yiting/Lab05/Lab05/vivado.log
+# Journal file: H:/DL2137_Yiting/Lab05/Lab05\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project H:/DL2137_Yiting/Lab05/Lab05/Lab05.xpr
+SScanning sources...FFinished scanning sourcesWWARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'H:/DL2137_Yiting/Lab05/Lab05/Lab05.srcs/sources_1'.CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVitis/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1107.512 ; gain = 0.000
+uupdate_compile_order -fileset sources_1eexit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 14:01:52 2020...
