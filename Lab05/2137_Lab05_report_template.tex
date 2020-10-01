@@ -60,25 +60,88 @@
 %=========== Body  ====================================
 \begin{document}
 
-\title{ELC 2137 Lab 03: Lab Title}
-\author{Put your name(s) here}
+\title{ELC 2137 Lab 05: Intro to Verilog}
+\author{Yiting Wang}
 
 \maketitle
 
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
+In this Lab we are going to describe digital circuits with code,  or a  hardware description language  (HDL). That's because before we built digital circuits using hardware devices.  This becomes cumbersome very quickly.  It would be possible to draw circuit schematics in soft-ware then “program” them onto a device.  This is easier/faster than physically wiring by hand and allows for much larger, more complicated designs, but still requires a significant amount of click-and-place. \\
+
 
 
 \section*{Q\&A}
 
-Answer questions posed in the lab assignment here.
+\begin{enumerate}
+	\item Comment on whether the simulations match the expected output values? \\
+	In the half adder and the full adder, the simulations match the expected output values; but in the two bit adder/subtractor, the simulation doesn't match the expected output values. \\
+	\item What is one thing that you still don’t understand about Verilog? \\
+	I don't know a lot of it casue I am a beginner, but I think I understand all the knowledge in this lab. \\
+\end{enumerate}
+
 
 
 \section*{Results}
 
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
+Firgure is the simulation waveform and ERT of half adder, this simulation matches the expected output values, and the code about that is in the Code section. \\
+\begin{figure}[ht]\centering
+	\begin{tabular}{l|rrrr}
+		Time (ns): & 0 & 10 & 20 & 30 \\
+		\midrule
+		a & 0 & 0 & 1 & 1 \\
+		b & 0 & 1 & 0 & 1 \\
+		\midrule
+		c & 0 & 0 & 0 & 1 \\
+		s & 0 & 1 & 1 & 0 \\
+		\bottomrule
+	\end{tabular}\medskip
+		
+	\includegraphics{HalfAdderSimulation}
+	\caption{the simulation waveform and ERT of half adder}
+	\label{fig:HalfAdderSimulation}
+\end{figure}
+
+Firgure is the simulation waveform and ERT of full adder, this simulation matches the expected output values, and the code about that is in the Code section. \\
+\begin{figure}[ht]\centering
+	\begin{tabular}{l|rrrr|rrrr}
+		Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70\\
+		\midrule
+		cin & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+		a & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 \\
+		b & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
+		\midrule
+		c & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 1 \\
+		s & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1\\
+		\bottomrule
+	\end{tabular}\medskip
+		
+	\includegraphics{FullAdderSimulation}
+	\caption{the simulation waveform and ERT of full adder}
+	\label{fig:FullAdderSimulation}
+\end{figure}
+
+Firgure is the simulation waveform and ERT of two bit adder/subtractor, this simulation doesn't match the expected output values, and the code about that is in the Code section. \\
+\begin{figure}[ht]\centering
+	\begin{tabular}{l|rrrr|rrrr|rrrr|rr}
+		Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110 & 120 & 130 & 140 \\
+		\midrule
+		A1A0 & 00 & 00 & 00 & 00 & 01 & 10 & 10 & 00 & 00 & 00 & 00 & 01 & 10 & 10 \\
+		B1B0 & 00 & 01 & 10 & 11 & 01 & 01 & 00 & 00 & 01 & 10 & 11 & 01 & 01 & 00 \\
+		mode & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+		\midrule
+		c & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+		s1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
+		s0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+		\bottomrule
+	\end{tabular}\medskip
+		
+	\includegraphics{AddSubSimulation}
+	\caption{the simulation waveform and ERT of two bit adder/subtractor}
+	\label{fig:AddSubSimulation}
+\end{figure}
+
 
 
 \section*{Code}
@@ -87,19 +150,20 @@ In this section, put your simulation waveforms, results tables, pictures of hard
 \Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
 
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
+\Verilog[caption=Half Adder Test Benches Verilog code,label=code:file_ex]{halfadder_test.sv}
 
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
+\Verilog[caption=Full Adder Verilog code,label=code:file_ex]{fulladder.sv}
 
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
+\Verilog[caption=Full Adder Test Benches Verilog code,label=code:file_ex]{fulladder_test.sv}
 
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
+\Verilog[caption=Two Bit Adder/Aubtractor Verilog code,label=code:file_ex]{addsub.sv}
 
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
+\Verilog[caption=Two Bit Adder/Aubtractor Test Benches Verilog code,label=code:file_ex]{addsub_test.sv}
+
 
 
 \end{document}
