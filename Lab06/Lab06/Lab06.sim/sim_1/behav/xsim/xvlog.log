@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab06/mux2_4b.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_4b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab06/mux2_4b_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_4b_test
