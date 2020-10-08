@@ -29,8 +29,8 @@ module sseg1(
         .sseg(sseg)
     );
     
-    assign [1:0] seg_un = ;
-    assign dp;
+    assign seg_un = 2'b11;
+    assign dp = 1;
     assign seg_L = ~sel;
     assign seg_R = sel;
     

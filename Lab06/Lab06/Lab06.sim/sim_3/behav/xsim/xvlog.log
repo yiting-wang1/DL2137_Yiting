@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab06/sseg1.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sseg1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab06/sseg1_wrapper.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sseg1_wrapper
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'sw' is not allowed [H:/DL2137_Yiting/Lab06/sseg1_wrapper.sv:17]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'an' is not allowed [H:/DL2137_Yiting/Lab06/sseg1_wrapper.sv:18]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'dp' is not allowed [H:/DL2137_Yiting/Lab06/sseg1_wrapper.sv:19]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'seg' is not allowed [H:/DL2137_Yiting/Lab06/sseg1_wrapper.sv:20]
