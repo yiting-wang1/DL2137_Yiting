@@ -60,7 +60,7 @@
 %=========== Body  ====================================
 \begin{document}
 
-\title{ELC 2137 Lab 0: Lab Title}
+\title{ELC 2137 Lab 06: MUX and 7-segment Decoder}
 \author{Yiting Wang}
 
 \maketitle
@@ -68,16 +68,19 @@
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
+In this lab, we will be setting up a circuit to display an 8-bit number on two 7-segment displays (i.e.two  hexadecimal  digits). And we will design a couple of combinational logic modules in Verilog and then implement your design on an FPGA. After completing this lab, we should be able to write a multiplexer in Verilog using the conditional operator, Write combinational Verilog components using an always block, Define and use multi-bit signals (vectors), Instantiate and connect components in a top-level module, Use provided constraint files to specify package pins, and Implement design on FPGA (Digilent Basys3 board).\\
+
 
 
 \section*{Q\&A}
 
 \begin{enumerate}
 	\item List of errors found during simulation. What does this tell you about why we run simulations?\\
+	
 	When I ran the Simulation, Synthesis and Implementation, there isn't any errors only a warning. I do made some mistakes about my code. \\
 	After I ran the Simulation, I found the results is not match with my  expected results table, so I found some mistakes about my code.\\
 	\item How many wires are connected to the 7-segment display? If the segments were not all connected together, how many wires would there have to be? Why do we prefer the current method  vs. separating all of the segments?\\
+	
 	How many wires are connected to the 7-segment display? 2. One input for num, and one output for sseg.\\ 
 	If the segments were not all connected together, how many wires would there have to be? 11. \\
 	Why do we prefer the current method  vs. separating all of the segments? because when we do some bigger project in the future, we will have more inputs and outputs, if we use the current method, it will help us to organize them easier.\\
@@ -85,37 +88,9 @@ Type the summary of your experiment and results here.
 
 
 
+\section*{Results}	
 
-\section*{Results}
-	
-	
-	\begin{figure}[ht]\centering
-		\begin{tabular}{l|rrrr}
-			Time (ns): & 0 & 10 & 20 & 30 \\
-			\midrule
-			a & 0 & 1 & 0 & 1 \\
-			b & 0 & 0 & 1 & 1 \\
-			\midrule
-			c & 0 & 0 & 0 & 1 \\
-			s & 0 & 1 & 1 & 0 \\
-			\bottomrule
-		\end{tabular}\medskip
-		
-		\includegraphics[width=1.7\linewidth]{Lab1Table}
-		\caption{Example of a simulation waveform and ERT}
-		\label{fig:sim_with_table}
-	\end{figure}
-	
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{Lab1Table}
-	\end{center}
-	
-	
-	
-	
-	
-	
-	Firgure 1 is the simulation waveform and ERT of mux2_4b.\\
+	Firgure 1 is the simulation waveform and ERT of the 4-bit Multiplexer.
 	\begin{figure}[ht]\centering
 		\begin{tabular}{l|rrrr}
 			Time (ns): & 0 & 10 & 20 & 30 \\
@@ -129,13 +104,13 @@ Type the summary of your experiment and results here.
 		\end{tabular}\medskip
 		
 		\includegraphics[width=1\textwidth]{mux2_4b_simulation}
-		\caption{the simulation waveform and ERT of mux2_4b}
+		\caption{the simulation waveform and ERT of the 4-bit Multiplexer}
 		\label{fig:mux2_4b_simulation}
 	\end{figure}
 	
-	Firgure 2 is the simulation waveform and ERT of sseg_decoder. \\
+	Firgure 2 is the simulation waveform and ERT of the Seven-segment Decoder.
 	\begin{figure}[ht]\centering
-		\begin{tabular}{l|rrrr|rrrr}
+		\begin{tabular}{l|rrrr|rrrr|rrrr|rrrr}
 			Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110 & 120 & 130 & 140 & 150 \\
 			\midrule
 			num (hex) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & a & b & c & d & e & f \\
@@ -145,37 +120,39 @@ Type the summary of your experiment and results here.
 		\end{tabular}\medskip
 		
 		\includegraphics[width=1\textwidth]{sseg_decoder_simulation}
-		\caption{the simulation waveform and ERT of sseg_decoder}
+		\caption{the simulation waveform and ERT of the Seven-segment Decoder}
 		\label{fig:sseg_decoder_simulation}
 	\end{figure}
 	
-	Firgure 3 is the simulation waveform and ERT of sseg1. \\
+	Firgure 3 is the simulation waveform and ERT of the Top-level Module.
 	\begin{figure}[ht]\centering
-		\begin{tabular}{l|rrrr|rrrr|rrrr|rr}
-			Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110 & 120 & 130 \\
+		\begin{tabular}{l|rrrr|rrrr|rrrr}
+			Time (ns): & 0 & 10 & 20 & 30 & 150 & 160 & 170 & 180 & 290 & 300 & 310 & 320\\
 			\midrule
-			A1A0 & 00 & 00 & 00 & 00 & 01 & 10 & 10 & 00 & 00 & 00 & 00 & 01 & 10 & 10 \\
-			B1B0 & 00 & 01 & 10 & 11 & 01 & 01 & 00 & 00 & 01 & 10 & 11 & 01 & 01 & 00 \\
-			mode & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+			sw & 0000 & 0040 & 8040 & 0079 & 0078 & 8078 & 0000 & 8000 & 0006 & 8006 & 000e & 800e \\
 			\midrule
-			c & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
-			s1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
-			s0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+			an & 11 & 11 & 11 & 11 & 11 & 11 & 11 & 11 & 11 & 11 & 11 & 11\\
+			sseg & 40 & 40 & 19 & 18 & 00 & 78 & 40 & 40 & 02 & 40 & 06 & 40 \\
+			dp & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+			an1 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+			an0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
 			\bottomrule
 		\end{tabular}\medskip
 		
-		\includegraphics[width=1\textwidth]{AddSubSimulation}
-		\caption{the simulation waveform and ERT of two bit adder/subtractor}
-		\label{fig:AddSubSimulation}
+		\includegraphics[width=1.1\textwidth]{sseg1_simulation}
+		\caption{the simulation waveform and ERT of the Top-level Module}
+		\label{fig:sseg1}
 	\end{figure}
-
 	
-	Firgure 1 is the block diagrams for half adder module. \\
-	\begin{figure}[ht]\centering    
-		\includegraphics[width=0.5\textwidth]{halfadder}    
-		\caption{This is the block diagrams for half adder module.}    
-		\label{fig:halfadder}
-	\end{figure}
+	This is the picture of my board which showing a value on the first digit\\
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{board_picture1}
+	\end{center}
+	
+	This is the picture of my board which showing a value on the second digit\\	
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{board_picture2}
+	\end{center}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2020.10.9)  9 OCT 2020 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2020.10.9)  9 OCT 2020 18:10
 entering extended mode
 **./2137_report_template.tex
 (2137_report_template.tex
@@ -388,228 +388,80 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 67.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.91 ...s the simulation waveform and ERT of mux2_
-                                                  4b.\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+
+ []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 91.
-
-! LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 	\begin{figure}[ht]
-                        \centering
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\@xfloat ...@fltovf \fi \global \setbox \@currbox 
-                                                  \color@vbox \normalcolor \...
-l.92 	\begin{figure}[ht]
-                        \centering
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \vbox 
-l.92 	\begin{figure}[ht]
-                        \centering
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
+(Font)              <10.95> on input line 95.
 <mux2_4b_simulation.png, id=3, 831.85782pt x 133.24782pt>
 File: mux2_4b_simulation.png Graphic file (type png)
 <use mux2_4b_simulation.png>
-Package pdftex.def Info: mux2_4b_simulation.png  used on input line 104.
+Package pdftex.def Info: mux2_4b_simulation.png  used on input line 106.
 (pdftex.def)             Requested size: 469.75502pt x 75.24652pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.105 ...e simulation waveform and ERT of mux2_4b}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.105 ...e simulation waveform and ERT of mux2_4b}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.108 	
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--108
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.109 ... the simulation waveform and ERT of sseg_
-                                                  decoder. \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 	\begin{figure}[ht]
-                         \centering
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\@xfloat ...@fltovf \fi \global \setbox \@currbox 
-                                                  \color@vbox \normalcolor \...
-l.110 	\begin{figure}[ht]
-                         \centering
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \vbox 
-l.110 	\begin{figure}[ht]
-                         \centering
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.112 ... & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 &
-                                                   80 & 90 & 100 & 110 & 120...
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.114 ...m (hex) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 &
-                                                   8 & 9 & a & b & c & d & e...
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.116 ...& 40 & 79 & 24 & 30 & 19 & 12 & 02 & 78 &
-                                                   00 & 18 & 08 & 03 & 46 & ...
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
 <sseg_decoder_simulation.png, id=5, 1147.28625pt x 125.71968pt>
 File: sseg_decoder_simulation.png Graphic file (type png)
 <use sseg_decoder_simulation.png>
-Package pdftex.def Info: sseg_decoder_simulation.png  used on input line 120.
+Package pdftex.def Info: sseg_decoder_simulation.png  used on input line 122.
 (pdftex.def)             Requested size: 469.75502pt x 51.47441pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.121 ...ulation waveform and ERT of sseg_decoder}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.121 ...ulation waveform and ERT of sseg_decoder}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.124 	
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--124
-
- []
-
-
-! LaTeX Error: File `AddSubSimulation' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...hics[width=1\textwidth]{AddSubSimulation}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `halfadder' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 ...egraphics[width=0.5\textwidth]{halfadder}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
 [1
 
 {C:/Users/yiting_wang1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<sseg1_simulation.png, id=17, 1036.62282pt x 141.52875pt>
+File: sseg1_simulation.png Graphic file (type png)
+<use sseg1_simulation.png>
+Package pdftex.def Info: sseg1_simulation.png  used on input line 142.
+(pdftex.def)             Requested size: 516.73338pt x 70.55255pt.
+
+Overfull \hbox (46.97836pt too wide) in paragraph at lines 142--143
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+<board_picture1.jpg, id=18, 722.7pt x 963.6pt>
+File: board_picture1.jpg Graphic file (type jpg)
+<use board_picture1.jpg>
+Package pdftex.def Info: board_picture1.jpg  used on input line 149.
+(pdftex.def)             Requested size: 234.8775pt x 313.16629pt.
+[2 <./mux2_4b_simulation.png> <./sseg_decoder_simulation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+<board_picture2.jpg, id=27, 963.6pt x 1284.8pt>
+File: board_picture2.jpg Graphic file (type jpg)
+<use board_picture2.jpg>
+Package pdftex.def Info: board_picture2.jpg  used on input line 154.
+(pdftex.def)             Requested size: 234.8775pt x 313.16139pt.
+[3 <./sseg1_simulation.png> <./board_picture1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -620,7 +472,7 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 File: lstlang3.sty 2015/06/04 1.6 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 159.
+nput line 163.
  (mux2_4b.sv
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1.
@@ -636,12 +488,12 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 
 Missing character: There is no “ in font cmtt10!
 Missing character: There is no ” in font cmtt10!
-)
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[4 <./board_picture2.jpg>])
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-(mux2_4b_test.sv [2]
+(mux2_4b_test.sv
 Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
@@ -652,7 +504,7 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
@@ -661,13 +513,13 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
 
-
+[5]
 Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[3])
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+)
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
@@ -681,8 +533,8 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[4])
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+[6])
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
@@ -696,8 +548,8 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[5])
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+[7])
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
@@ -711,7 +563,7 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[6] [7]) (sseg1_wrapper.sv
+[8] [9]) (sseg1_wrapper.sv
 Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
@@ -721,40 +573,37 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[8] [9])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+[10] [11])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
  (2137_report_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `2137_report_template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 8281 strings out of 493308
- 120175 string characters out of 3138747
- 377304 words of memory out of 3000000
- 11368 multiletter control sequences out of 15000+200000
+ 8287 strings out of 493308
+ 120486 string characters out of 3138747
+ 368424 words of memory out of 3000000
+ 11381 multiletter control sequences out of 15000+200000
  8671 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,10n,52p,271b,1783s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,9n,52p,658b,1979s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmtt10.pfb>
-Output written on 2137_report_template.pdf (10 pages, 163299 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 2137_report_template.pdf (12 pages, 811593 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 362 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 512 PDF objects out of 1000 (max. 8388607)
+ 365 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
