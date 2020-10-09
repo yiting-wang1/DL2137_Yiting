@@ -160,18 +160,9 @@
 
 
 \section*{Code}
-	Here is the code including from examplecode.sv in the Code section.\\
-	module example \\
-	\#(parameter BITS=4) \\
-	(\\
-	input [BITS-1:0] in0, in1,\\
-	input sel,\\
-	output [BITS-1:0] out\\
-	);\\
-	
-	// Choose in1 or in0\\
-	out = sel ? in1: in0; \\
-	endmodule
+
+\subsection*{File Inclusion}
+\Verilog[caption=lab1_example Verilog code,label=code:file_ex]{lab1_example_code.sv}
 
 
 

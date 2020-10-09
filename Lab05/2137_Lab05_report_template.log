@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2020.8.27)  1 OCT 2020 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2020.10.9)  9 OCT 2020 16:54
 entering extended mode
 **./2137_Lab05_report_template.tex
 (2137_Lab05_report_template.tex
@@ -390,24 +390,9 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-
- []
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
 <halfadder.png, id=3, 268.00125pt x 189.70876pt>
 File: halfadder.png Graphic file (type png)
 <use halfadder.png>
@@ -420,30 +405,31 @@ File: HalfAdderSimulation.png Graphic file (type png)
 <use HalfAdderSimulation.png>
 Package pdftex.def Info: HalfAdderSimulation.png  used on input line 108.
 (pdftex.def)             Requested size: 469.75502pt x 69.7918pt.
-<fulladder.png, id=6, 403.5075pt x 221.82875pt>
+ [1
+
+{C:/Users/yiting_wang1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./ha
+lfadder.png>]
+<fulladder.png, id=19, 403.5075pt x 221.82875pt>
 File: fulladder.png Graphic file (type png)
 <use fulladder.png>
 Package pdftex.def Info: fulladder.png  used on input line 115.
-(pdftex.def)             Requested size: 234.8775pt x 129.12447pt.
-<FullAdderSimulation.png, id=7, 615.80063pt x 126.4725pt>
+(pdftex.def)             Requested size: 328.82707pt x 180.77357pt.
+<FullAdderSimulation.png, id=20, 615.80063pt x 126.4725pt>
 File: FullAdderSimulation.png Graphic file (type png)
 <use FullAdderSimulation.png>
 Package pdftex.def Info: FullAdderSimulation.png  used on input line 134.
 (pdftex.def)             Requested size: 469.75502pt x 96.47903pt.
-<addsub.png, id=8, 517.935pt x 243.91125pt>
+<addsub.png, id=21, 517.935pt x 243.91125pt>
 File: addsub.png Graphic file (type png)
 <use addsub.png>
 Package pdftex.def Info: addsub.png  used on input line 141.
-(pdftex.def)             Requested size: 234.8775pt x 110.61133pt.
-<AddSubSimulation.png, id=9, 807.015pt x 243.15843pt>
+(pdftex.def)             Requested size: 328.82707pt x 154.85959pt.
+<AddSubSimulation.png, id=22, 807.015pt x 243.15843pt>
 File: AddSubSimulation.png Graphic file (type png)
 <use AddSubSimulation.png>
 Package pdftex.def Info: AddSubSimulation.png  used on input line 161.
 (pdftex.def)             Requested size: 469.75502pt x 141.5403pt.
-[1
-
-{C:/Users/yiting_wang1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
@@ -451,7 +437,7 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2015/06/04 1.6 listings language file
-)
+) [2 <./HalfAdderSimulation.png> <./fulladder.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 171.
  (halfadder.sv
@@ -467,17 +453,7 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[2 <./halfadder.png> <./HalfAdderSimulation.png>]) (halfadder_test.sv
-Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
-[][][][] 
- []
-
-[3 <./fulladder.png> <./FullAdderSimulation.png>]
-Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
-[][][][] 
- []
-
-[4 <./addsub.png> <./AddSubSimulation.png>]) (fulladder.sv
+[3 <./FullAdderSimulation.png> <./addsub.png>]) (halfadder_test.sv
 Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
@@ -487,7 +463,17 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-) [5] (fulladder_test.sv
+[4 <./AddSubSimulation.png>]) (fulladder.sv
+Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
+[][][][] 
+ []
+
+
+Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
+[][][][] 
+ []
+
+[5]) (fulladder_test.sv
 Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
@@ -502,12 +488,12 @@ Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
 
-
+[6]
 Overfull \hbox (54.244pt too wide) in paragraph at lines 6--9
 [][][][] 
  []
 
-[6]) (addsub_test.sv
+) (addsub_test.sv
 Overfull \hbox (54.244pt too wide) in paragraph at lines 2--3
 [][][][] 
  []
@@ -536,17 +522,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
 Here is how much of TeX's memory you used:
  8087 strings out of 493308
  117893 string characters out of 3138747
- 365847 words of memory out of 3000000
+ 374918 words of memory out of 3000000
  11344 multiletter control sequences out of 15000+200000
  8671 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,9n,52p,528b,1985s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,9n,52p,526b,1985s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 2137_Lab05_report_template.pdf (8 pages, 1243251 bytes).
+Output written on 2137_Lab05_report_template.pdf (8 pages, 1243219 bytes).
 PDF statistics:
  314 PDF objects out of 1000 (max. 8388607)
  208 named destinations out of 1000 (max. 500000)

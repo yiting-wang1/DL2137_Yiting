@@ -74,16 +74,47 @@ Type the summary of your experiment and results here.
 \section*{Q\&A}
 
 \begin{enumerate}
-	\item List  of  errors  found  during  simulation.   What does this tell you about why we run simulations? \\
-	 \\
-	\item How many wires are connected to the 7-segment display?  If the segments werenotall connectedtogether,  how  many  wires  would  there  have  tobe?   Why  do  we  prefer  the  current  method  vs.separating all of the segments?\\
+	\item List of errors found during simulation. What does this tell you about why we run simulations?\\
+	When I ran the Simulation, Synthesis and Implementation, there isn't any errors only a warning. I do made some mistakes about my code. \\
+	After I ran the Simulation, I found the results is not match with my  expected results table, so I found some mistakes about my code.\\
+	\item How many wires are connected to the 7-segment display? If the segments were not all connected together, how many wires would there have to be? Why do we prefer the current method  vs. separating all of the segments?\\
+	How many wires are connected to the 7-segment display? 2. One input for num, and one output for sseg.\\ 
+	If the segments were not all connected together, how many wires would there have to be? 11. \\
+	Why do we prefer the current method  vs. separating all of the segments? because when we do some bigger project in the future, we will have more inputs and outputs, if we use the current method, it will help us to organize them easier.\\
 \end{enumerate}
 
 
 
 
 \section*{Results}
-
+	
+	
+	\begin{figure}[ht]\centering
+		\begin{tabular}{l|rrrr}
+			Time (ns): & 0 & 10 & 20 & 30 \\
+			\midrule
+			a & 0 & 1 & 0 & 1 \\
+			b & 0 & 0 & 1 & 1 \\
+			\midrule
+			c & 0 & 0 & 0 & 1 \\
+			s & 0 & 1 & 1 & 0 \\
+			\bottomrule
+		\end{tabular}\medskip
+		
+		\includegraphics[width=1.7\linewidth]{Lab1Table}
+		\caption{Example of a simulation waveform and ERT}
+		\label{fig:sim_with_table}
+	\end{figure}
+	
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{Lab1Table}
+	\end{center}
+	
+	
+	
+	
+	
+	
 	Firgure 1 is the simulation waveform and ERT of mux2_4b.\\
 	\begin{figure}[ht]\centering
 		\begin{tabular}{l|rrrr}
@@ -150,23 +181,31 @@ Type the summary of your experiment and results here.
 
 \section*{Code}
 
+my Verilog source file for the 4-bit Multiplexer.\\
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Verilog code,label=code:file_ex]{halfadder.sv}
+\Verilog[caption=4-bit Multiplexer Verilog code,label=code:file_ex]{mux2_4b.sv}
+my Verilog source file for the 4-bit Multiplexer test.\\
+\subsection*{File Inclusion}
+\Verilog[caption=4-bit Multiplexer Test Benches Verilog code,label=code:file_ex]{mux2_4b_test.sv}
+
+my Verilog source file for the Seven-segment Decoder.\\
+\subsection*{File Inclusion}
+\Verilog[caption=Seven-segment Decoder Verilog code,label=code:file_ex]{sseg_decoder.sv}
+my Verilog source file for the Seven-segment Decoder test.\\
+\subsection*{File Inclusion}
+\Verilog[caption=Seven-segment Decoder Test Benches Verilog code,label=code:file_ex]{sseg_decoder_test.sv}
+
+my Verilog source file for the Top-level Module.\\
+\subsection*{File Inclusion}
+\Verilog[caption=Top-level Module Verilog code,label=code:file_ex]{sseg1.sv}
+my Verilog source file for the Top-level Module test.\\
+\subsection*{File Inclusion}
+\Verilog[caption=Top-level Module Test Benches Verilog code,label=code:file_ex]{sseg1_test.sv}
+
 
 \subsection*{File Inclusion}
-\Verilog[caption=Half Adder Test Benches Verilog code,label=code:file_ex]{halfadder_test.sv}
+\Verilog[caption=Two Bit Adder/Aubtractor Verilog code,label=code:file_ex]{sseg1_wrapper.sv}
 
-\subsection*{File Inclusion}
-\Verilog[caption=Full Adder Verilog code,label=code:file_ex]{fulladder.sv}
-
-\subsection*{File Inclusion}
-\Verilog[caption=Full Adder Test Benches Verilog code,label=code:file_ex]{fulladder_test.sv}
-
-\subsection*{File Inclusion}
-\Verilog[caption=Two Bit Adder/Aubtractor Verilog code,label=code:file_ex]{addsub.sv}
-
-\subsection*{File Inclusion}
-\Verilog[caption=Two Bit Adder/Aubtractor Test Benches Verilog code,label=code:file_ex]{addsub_test.sv}
 
 
 \end{document}
