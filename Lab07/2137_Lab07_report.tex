@@ -82,12 +82,12 @@ There is no question in lab7.\\
 
 	Firgure 1 is the simulation waveform and ERT of the Add3.\\
 	\begin{figure}[ht]\centering
-		\begin{tabular}{l|rrrr|rrrr|rrrr|rrrr|r}
-			Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110 & 120 & 130 & 140 & 150 \\
+		\begin{tabular}{l|rrrr|rrrr|rrrr}
+			Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 110 & 120 & 130 & 140 & 150 \\
 			\midrule
-			num & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0110 & 0111 & 1000 & 1001 & 1010 & 1011 & 1100 & 1101 & 1110 & 1111 \\
+			num & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0110 & 1011 & 1100 & 1101 & 1110 & 1111 \\
 			\midrule
-			out & 0000 & 0001 & 0010 & 0011 & 0100 & 1000 & 1001 & 1010 & 1011 & 1100 & 1101 & 1110 & 1111 & 0000 & 0001 & 0010 \\
+			out & 0000 & 0001 & 0010 & 0011 & 0100 & 1000 & 1001 & 1110 & 1111 & 0000 & 0001 & 0010 \\
 			\bottomrule
 		\end{tabular}\medskip
 		
@@ -97,38 +97,43 @@ There is no question in lab7.\\
 	\end{figure}
 
 
-Firgure 2 is the simulation waveform and ERT of the 6-bit BCD.
+Firgure 2 is the simulation waveform and ERT of the 6-bit BCD.\\
 \begin{figure}[ht]\centering
-	\begin{tabular}{l|rrr|rrr}
-		Time (ns): & 0 & 10 & 20 & 30 & 120 & 130 & 140 & 150 \\
+	\begin{tabular}{l|rrr|rrrr}
+		Time (ns): & 0 & 10 & 20 & 600 & 610 & 620 & 630 \\
 		\midrule
-		num & 0000 & 0001 & 0010 & 1101 & 1110 & 1111 \\
+		Bin & 000000 & 000001 & 000010 & 111100 & 111101 & 111110 & 111111 \\
 		\midrule
-		out & 0000 & 0001 & 0010 & 1111 & 0000 & 0001 & 0010 \\
+		ones & 0000 & 0001 & 0010 & 0000 & 0001 & 0010 & 0011 \\
+		tens & 0000 & 0000 & 0000 & 0110 & 0110 & 0110 & 0110 \\
 		\bottomrule
 	\end{tabular}\medskip
 	
 	\includegraphics[width=1\textwidth]{bcd6_simulate_beginning}
 	\includegraphics[width=1\textwidth]{bcd6_simulate_end}
-	\caption{the simulation waveform and ERT of the 4-bit Multiplexer}
-	\label{fig:add3_simulate}
+	\caption{the simulation waveform and ERT of the 6-bit BCD}
+	\label{fig:bcd6_simulate}
 \end{figure}
 
 
-Firgure 1 is the simulation waveform and ERT of the Add3.
+Firgure 3 is the simulation waveform and ERT of the 11-bit BCD.\\
 \begin{figure}[ht]\centering
-	\begin{tabular}{l|rrrr|rrrr|rrrr|rrrr|r}
-		Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110 & 120 & 130 & 140 & 150 \\
+	\begin{tabular}{l|rrrr|rrrr|rr}
+		Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 20430 & 20440 & 20450 & 20460 \\
 		\midrule
-		num & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0110 & 0111 & 1000 & 1001 & 1010 & 1011 & 1100 & 1101 & 1110 & 1111 \\
+		Bin & 000 & 001 & 002 & 003 & 004 & 005 & 7fb & 7fc & 7fd & 7fe \\
 		\midrule
-		out & 0000 & 0001 & 0010 & 0011 & 0100 & 1000 & 1001 & 1010 & 1011 & 1100 & 1101 & 1110 & 1111 & 0000 & 0001 & 0010 \\
+		ones & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0011 & 0100 & 0101 & 0110 \\
+		tens & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0100 & 0100 & 0100 & 0100 \\
+		hund & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 \\
+		thou & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0010 & 0010 & 0010 & 0010 \\
 		\bottomrule
 	\end{tabular}\medskip
 	
-	\includegraphics[width=1\textwidth]{add3_simulate}
-	\caption{the simulation waveform and ERT of the 4-bit Multiplexer}
-	\label{fig:add3_simulate}
+	\includegraphics[width=1\textwidth]{bcd11_simulate_beginning}
+	\includegraphics[width=1\textwidth]{bcd11_simulate_end}
+	\caption{the simulation waveform and ERT of the 11-bit BCD}
+	\label{fig:bcd11_simulate}
 \end{figure}
 
 
@@ -138,7 +143,25 @@ Firgure 1 is the simulation waveform and ERT of the Add3.
 \Verilog[caption=Add3 Verilog code,label=code:file_ex]{add3.sv}
 
 \subsection*{File Inclusion}
-\Verilog[caption=Add3 Multiplexer Test Benches Verilog code,label=code:file_ex]{add3_test.sv}
+\Verilog[caption=Add3 Test Benches Verilog code,label=code:file_ex]{add3_test.sv}
+
+
+\subsection*{File Inclusion}
+\Verilog[caption=6-bit BCD Verilog code,label=code:file_ex]{bcd6.sv}
+
+\subsection*{File Inclusion}
+\Verilog[caption=6-bit BCD Test Benches Verilog code,label=code:file_ex]{bcd6_test.sv}
+
+
+\subsection*{File Inclusion}
+\Verilog[caption=11-bit BCD Verilog code,label=code:file_ex]{bcd11.sv}
+
+\subsection*{File Inclusion}
+\Verilog[caption=11-bit BCD Test Benches Verilog code,label=code:file_ex]{bcd11_test.sv}
+
+\subsection*{File Inclusion}
+\Verilog[caption=sseg1 BCD Verilog code,label=code:file_ex]{sseg1_BCD.sv}
+
 
 
 \end{document}
