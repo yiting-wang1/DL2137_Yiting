@@ -10,7 +10,7 @@ module sseg1(
     input [3:0] A,
     input [3:0] B,
     input sel,
-    output [1:0] seg_un,
+    output [1:0] seg_an,
     output dp,
     output [6:0] sseg,
     output seg_L,
@@ -29,8 +29,8 @@ module sseg1(
         .sseg(sseg)
     );
     
-    assign [1:0] seg_un = ;
-    assign dp,
+    assign [1:0] seg_an = 1;
+    assign dp = 1,
     assign seg_L = ~sel;
     assign seg_R = sel;
     

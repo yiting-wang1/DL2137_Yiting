@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+H:/DL2137_Yiting/Lab07/Lab07/Lab07.sim/sim_3/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+H:/DL2137_Yiting/Lab07/add3.sv,1602816643,systemVerilog,,H:/DL2137_Yiting/Lab07/bcd11.sv,,add3,,,,,,,,
+H:/DL2137_Yiting/Lab07/bcd11.sv,1602817840,systemVerilog,,H:/DL2137_Yiting/Lab07/bcd11_test.sv,,bcd11,,,,,,,,
+H:/DL2137_Yiting/Lab07/bcd11_test.sv,1602819074,systemVerilog,,,,bcd11_test,,,,,,,,

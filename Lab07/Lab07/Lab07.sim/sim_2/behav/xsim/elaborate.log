@@ -1,17 +1,18 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/XilinxVivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 37fea9c0b00b473386b23eeb4f3becc7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot BCD_6bit_test_behav xil_defaultlib.BCD_6bit_test xil_defaultlib.glbl -log elaborate.log 
+Running: C:/XilinxVivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 5e0d3cc07ce6483eb52c3dea2c49781a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot bcd6_test_behav xil_defaultlib.bcd6_test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'num' [H:/DL2137_Yiting/Lab07/BCD_6bit.sv:31]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [H:/DL2137_Yiting/Lab07/BCD_6bit.sv:31]
+WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'num' [H:/DL2137_Yiting/Lab07/bcd6.sv:19]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [H:/DL2137_Yiting/Lab07/bcd6.sv:19]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [H:/DL2137_Yiting/Lab07/bcd6.sv:34]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.add3
-Compiling module xil_defaultlib.BCD_6bit
-Compiling module xil_defaultlib.BCD_6bit_test
+Compiling module xil_defaultlib.bcd6
+Compiling module xil_defaultlib.bcd6_test
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot BCD_6bit_test_behav
+Built simulation snapshot bcd6_test_behav

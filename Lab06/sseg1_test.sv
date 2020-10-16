@@ -9,13 +9,13 @@
 module sseg1_test();
     
     reg [15:0] sw;
-    wire [1:0] seg_un_t;
+    wire [1:0] seg_an_t;
     wire [6:0] sseg_t;
     wire dp_t, seg_L_t, seg_R_t;
     
     sseg1 dut(
     .A(sw[7:4]), .B(sw[3:0]), .sel(sw[15]),
-    .seg_un(seg_un_t), .dp(dp_t), .sseg(sseg_t), .seg_L(seg_L_t), .seg_R(seg_R_t)
+    .seg_an(seg_an_t), .dp(dp_t), .sseg(sseg_t), .seg_L(seg_L_t), .seg_R(seg_R_t)
     );
      
     

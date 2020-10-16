@@ -1,6 +1,9 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab07/BCD_6bit.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module BCD_6bit
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab07/add3.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module add3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab07/BCD_6bit_test.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module BCD_6bit_test
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab07/bcd6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd6
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [H:/DL2137_Yiting/Lab07/bcd6.sv:34]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/DL2137_Yiting/Lab07/bcd6_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd6_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/DL2137_Yiting/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
