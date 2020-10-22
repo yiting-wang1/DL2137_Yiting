@@ -68,7 +68,10 @@
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
+We have created a 2-digit, 7-segment display and a BCD converter. In this lab, we expand this to a 4-digit display and add the ability to switch between hexadecimal and decimal (BCD) output. After completing this lab, we should be able to:
+Use parameters to create flexible, reusable modules
+Import modules, modify modules, and use them to design a modular system
+
 
 
 \section*{Q\&A}
@@ -76,99 +79,101 @@ Type the summary of your experiment and results here.
 There is no question in the lab 08 assignment.
 
 
+
 \section*{Results}
 
-	Firgure 1 is the simulation waveform and ERT of the mux2.\\
+	Firgure 1 is the simulation waveform and ERT of the mux2.
+    \begin{figure}[ht]\centering
+        \begin{tabular}{l|rrrr}
+            Time (ns): & 0 & 10 & 20 & 30 \\
+            \midrule
+            in1 & 0001 & 0001 & 0011 & 0011 \\
+            in0 & 0000 & 0000 & 0101 & 0101 \\
+            sel & 0 & 1 & 0 & 1 \\
+            \midrule
+            out & 0000 & 0001 & 0101 & 0011\\
+            \bottomrule
+        \end{tabular}\medskip
 
-\begin{figure}[ht]\centering
-	\begin{tabular}{l|rrrr|rrrr|rrrr}
-		Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 110 & 120 & 130 & 140 & 150 \\
-		\midrule
-		num & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0110 & 1011 & 1100 & 1101 & 1110 & 1111 \\
-		\midrule
-		out & 0000 & 0001 & 0010 & 0011 & 0100 & 1000 & 1001 & 1110 & 1111 & 0000 & 0001 & 0010 \\
-		\bottomrule
-	\end{tabular}\medskip
-	
-	\includegraphics[width=1\textwidth]{mux2_simulation}
-	\caption{the simulation waveform and ERT of the mux2}
-	\label{fig:mux2_simulation}
-\end{figure}
-
-
-Firgure 2 is the simulation waveform and ERT of the mux4.\\
-.\\
-\begin{figure}[ht]\centering
-	\begin{tabular}{l|rrr|rrrr}
-		Time (ns): & 0 & 10 & 20 & 600 & 610 & 620 & 630 \\
-		\midrule
-		Bin & 000000 & 000001 & 000010 & 111100 & 111101 & 111110 & 111111 \\
-		\midrule
-		ones & 0000 & 0001 & 0010 & 0000 & 0001 & 0010 & 0011 \\
-		tens & 0000 & 0000 & 0000 & 0110 & 0110 & 0110 & 0110 \\
-		\bottomrule
-	\end{tabular}\medskip
-	
-	\includegraphics[width=1\textwidth]{anode_decoder_simulation}
-	\caption{the simulation waveform and ERT of the mux4}
-	\label{fig:mux4_simulation}
-\end{figure}
+        \includegraphics[width=1\textwidth]{mux2_simulation}
+        \caption{the simulation waveform and ERT of the mux2}
+        \label{fig:mux2_simulation}
+    \end{figure}
 
 
-Firgure 3 is the simulation waveform and ERT of the anode decoder.\\
-.\\
-\begin{figure}[ht]\centering
-	\begin{tabular}{l|rrrr|rrrr|rr}
-		Time (ns): & 0 & 10 & 20 & 30 & 40 & 50 & 20430 & 20440 & 20450 & 20460 \\
-		\midrule
-		Bin & 000 & 001 & 002 & 003 & 004 & 005 & 7fb & 7fc & 7fd & 7fe \\
-		\midrule
-		ones & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0011 & 0100 & 0101 & 0110 \\
-		tens & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0100 & 0100 & 0100 & 0100 \\
-		hund & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 \\
-		thou & 0000 & 0000 & 0000 & 0000 & 0000 & 0000 & 0010 & 0010 & 0010 & 0010 \\
-		\bottomrule
-	\end{tabular}\medskip
-	
-	\includegraphics[width=1\textwidth]{anode_decoder_simulation}
-	\caption{the simulation waveform and ERT of the anode decoder}
-	\label{fig:anode_decoder_simulation}
-\end{figure}
+    Firgure 2 is the simulation waveform and ERT of the mux4.
+    \begin{figure}[ht]\centering
+        \begin{tabular}{l|rrrr}
+            Time (ns): & 0 & 10 & 20 & 30 \\
+            \midrule
+            in3 & 0001 & 0001 & 0001 & 0001 \\
+            in2 & 0000 & 0000 & 0000 & 0000 \\
+            in1 & 0011 & 0011 & 0011 & 0011 \\
+            in0 & 0101 & 0101 & 0101 & 0101 \\
+            sel & 00 & 01 & 10 & 11 \\
+            \midrule
+            out & 0101 & 0011 & 0000 & 0001 \\
+            \bottomrule
+        \end{tabular}\medskip
 
-This is the picture of my board which showing a value on the first digit\\
-\begin{center}
-	\includegraphics[width=0.7\textwidth]{board1}
-\end{center}
+        \includegraphics[width=1\textwidth]{mux4_simulation}
+        \caption{the simulation waveform and ERT of the mux4}
+        \label{fig:mux4_simulation}
+    \end{figure}
+
+
+    Firgure 3 is the simulation waveform and ERT of the anode decoder.
+    \begin{figure}[ht]\centering
+        \begin{tabular}{l|rrrr}
+            Time (ns): & 0 & 10 & 20 & 30 \\
+            \midrule
+            in & 00 & 01 & 10 & 11 \\
+            \midrule
+            out & 1110 & 1101 & 1011 & 0111 \\
+            \bottomrule
+        \end{tabular}\medskip
+
+        \includegraphics[width=1\textwidth]{anode_decoder_simulation}
+        \caption{the simulation waveform and ERT of the anode decoder}
+        \label{fig:anode_decoder_simulation}
+    \end{figure}
+
+
+    This is the picture of a copy of the relevant TCL Console output for Top-Level Simulation.
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{Top_Level_Simulation}
+    \end{center}
+
 
 
 \section*{Code}
 
-\subsection*{File Inclusion}
-\Verilog[caption=mux2 Verilog code,label=code:file_ex]{mux2.sv}
+    \subsection*{File Inclusion}
+    \Verilog[caption=mux2 Verilog code,label=code:file_ex]{mux2.sv}
 
-\subsection*{File Inclusion}
-\Verilog[caption=mux2 Test Benches Verilog code,label=code:file_ex]{mux2_test.sv}
-
-
-\subsection*{File Inclusion}
-\Verilog[caption=mux4 Verilog code,label=code:file_ex]{mux4.sv}
-
-\subsection*{File Inclusion}
-\Verilog[caption=mux4 Test Benches Verilog code,label=code:file_ex]{mux4_test.sv}
+    \subsection*{File Inclusion}
+    \Verilog[caption=mux2 Test Benches Verilog code,label=code:file_ex]{mux2_test.sv}
 
 
-\subsection*{File Inclusion}
-\Verilog[caption=anode decoder Verilog code,label=code:file_ex]{anode_decoder.sv}
+    \subsection*{File Inclusion}
+    \Verilog[caption=mux4 Verilog code,label=code:file_ex]{mux4.sv}
 
-\subsection*{File Inclusion}
-\Verilog[caption=anode decoder Test Benches Verilog code,label=code:file_ex]{anode_decoder_test.sv}
+    \subsection*{File Inclusion}
+    \Verilog[caption=mux4 Test Benches Verilog code,label=code:file_ex]{mux4_test.sv}
 
 
-\subsection*{File Inclusion}
-\Verilog[caption=sseg4 Verilog code,label=code:file_ex]{sseg4.sv}
+    \subsection*{File Inclusion}
+    \Verilog[caption=anode decoder Verilog code,label=code:file_ex]{anode_decoder.sv}
 
-\subsection*{File Inclusion}
-\Verilog[caption=sseg4 manual Verilog code,label=code:file_ex]{sseg4_manual.sv}
+    \subsection*{File Inclusion}
+    \Verilog[caption=anode decoder Test Benches Verilog code,label=code:file_ex]{anode_decoder_test.sv}
+
+
+    \subsection*{File Inclusion}
+    \Verilog[caption=sseg4 Verilog code,label=code:file_ex]{sseg4.sv}
+
+    \subsection*{File Inclusion}
+    \Verilog[caption=sseg4 manual Verilog code,label=code:file_ex]{sseg4_manual.sv}
 
 
 
