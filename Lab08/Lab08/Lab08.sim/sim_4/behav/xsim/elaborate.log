@@ -5,10 +5,6 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'num' [H:/DL2137_Yiting/Lab07/bcd11.sv:21]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 4 for port 'in1' [H:/DL2137_Yiting/Lab08/sseg4.sv:31]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 4 for port 'out' [H:/DL2137_Yiting/Lab08/sseg4.sv:32]
-WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 4 for port 'in1' [H:/DL2137_Yiting/Lab08/sseg4.sv:63]
-WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 4 for port 'out' [H:/DL2137_Yiting/Lab08/sseg4.sv:64]
 WARNING: [VRFC 10-5021] port 'clk' is not connected on this instance [H:/DL2137_Yiting/Lab08/basys3.sv:31]
 WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [H:/DL2137_Yiting/Lab07/bcd11.sv:21]
 WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [H:/DL2137_Yiting/Lab07/bcd11.sv:61]
@@ -21,10 +17,11 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.add3
 Compiling module xil_defaultlib.bcd11
-Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(BIT=16)
 Compiling module xil_defaultlib.mux4
 Compiling module xil_defaultlib.sseg_decoder
 Compiling module xil_defaultlib.anode_decoder
+Compiling module xil_defaultlib.mux2(BIT=7)
 Compiling module xil_defaultlib.sseg4
 Compiling module xil_defaultlib.sseg4_manual
 Compiling module xil_defaultlib.disp

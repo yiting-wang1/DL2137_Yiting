@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+H:/DL2137_Yiting/Lab09/Lab09/Lab09.sim/sim_3/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+H:/DL2137_Yiting/Lab09/alu.sv,1603386048,systemVerilog,,H:/DL2137_Yiting/Lab09/register.sv,,alu,,,,,,,,
+H:/DL2137_Yiting/Lab09/basys3_lab9.sv,1603389873,systemVerilog,,,,basys3_lab9,,,,,,,,
+H:/DL2137_Yiting/Lab09/register.sv,1603385380,systemVerilog,,H:/DL2137_Yiting/Lab09/top_lab9.sv,,register,,,,,,,,
+H:/DL2137_Yiting/Lab09/top_lab9.sv,1603389729,systemVerilog,,H:/DL2137_Yiting/Lab09/basys3_lab9.sv,,top_lab9,,,,,,,,
