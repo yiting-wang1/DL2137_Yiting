@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1602819555">
-  <File Type="OPT-HWDEF" Name="sseg1_BCD.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="sseg1_BCD_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="sseg1_BCD.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1603332877">
   <File Type="BITSTR-BMM" Name="sseg1_BCD_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="sseg1_BCD_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="sseg1_BCD_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="sseg1_BCD_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="sseg1_BCD_reports.tcl"/>
   <File Type="OPT-DRC" Name="sseg1_BCD_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sseg1_BCD.hwdef"/>
   <File Type="PWROPT-DCP" Name="sseg1_BCD_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="sseg1_BCD_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="sseg1_BCD_timing_summary_pwropted.rpt"/>
@@ -50,6 +48,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="sseg1_BCD_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="sseg1_BCD_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="sseg1_BCD_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="sseg1_BCD_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="sseg1_BCD_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="sseg1_BCD_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="sseg1_BCD_postroute_physopt.dcp"/>

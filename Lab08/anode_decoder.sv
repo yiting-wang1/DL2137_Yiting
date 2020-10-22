@@ -1,22 +1,8 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/15/2020 12:38:40 PM
-// Design Name: 
-// Module Name: anode_decoder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Company: ELC 2137
+// Engineer: Yiting Wang
+// Create Date: 10/15/2020
 //////////////////////////////////////////////////////////////////////////////////
 
 

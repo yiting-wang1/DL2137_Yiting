@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Oct 15 22:40:18 2020
+| Date         : Wed Oct 21 21:16:29 2020
 | Host         : ROG-305-09 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file sseg1_BCD_methodology_drc_routed.rpt -pb sseg1_BCD_methodology_drc_routed.pb -rpx sseg1_BCD_methodology_drc_routed.rpx
 | Design       : sseg1_BCD
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_sseg1_BCD
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 0

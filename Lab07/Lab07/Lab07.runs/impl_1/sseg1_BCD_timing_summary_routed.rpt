@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Oct 15 22:40:18 2020
+| Date         : Wed Oct 21 21:16:30 2020
 | Host         : ROG-305-09 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file sseg1_BCD_timing_summary_routed.rpt -pb sseg1_BCD_timing_summary_routed.pb -rpx sseg1_BCD_timing_summary_routed.rpx -warn_on_violation
 | Design       : sseg1_BCD

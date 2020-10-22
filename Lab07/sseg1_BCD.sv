@@ -8,13 +8,14 @@
 
 module sseg1_BCD(
     input [15:0] sw,
-    input clk,//do nothing with it but borad needs it to run
+    input clk,
+    
     output [3:0] an,
     output dp,
     output [6:0] seg
     );
     
-    wire tens_bcd11, ones_bcd11, hund_bcd11, thou_bcd11, out_mux;
+    wire [3:0] tens_bcd11, ones_bcd11, hund_bcd11, thou_bcd11, out_mux;
     
     bcd11 my_bcd11_sseg1(
         .in(sw[10:0]),

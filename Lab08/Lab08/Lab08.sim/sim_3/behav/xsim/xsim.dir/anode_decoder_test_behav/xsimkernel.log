@@ -1,7 +1,7 @@
-Running: xsim.dir/anode_decoder_test_behav/xsimk.exe -simmode gui -wdb anode_decoder_test_behav.wdb -simrunnum 0 -socket 58022
+Running: xsim.dir/anode_decoder_test_behav/xsimk.exe -simmode gui -wdb anode_decoder_test_behav.wdb -simrunnum 0 -socket 58836
 Design successfully loaded
-Design Loading Memory Usage: 6348 KB (Peak: 6348 KB)
-Design Loading CPU Usage: 61 ms
+Design Loading Memory Usage: 6344 KB (Peak: 6344 KB)
+Design Loading CPU Usage: 77 ms
 Simulation completed
-Simulation Memory Usage: 7000 KB (Peak: 7000 KB)
-Simulation CPU Usage: 93 ms
+Simulation Memory Usage: 6996 KB (Peak: 6996 KB)
+Simulation CPU Usage: 77 ms

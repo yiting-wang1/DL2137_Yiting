@@ -1,0 +1,15 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+H:/DL2137_Yiting/Lab06/sseg_decoder.sv,1602088992,systemVerilog,,H:/DL2137_Yiting/Lab08/basys3.sv,,sseg_decoder,,,,,,,,
+H:/DL2137_Yiting/Lab07/add3.sv,1602816643,systemVerilog,,H:/DL2137_Yiting/Lab08/anode_decoder.sv,,add3,,,,,,,,
+H:/DL2137_Yiting/Lab07/bcd11.sv,1602817840,systemVerilog,,H:/DL2137_Yiting/Lab08/disp.sv,,bcd11,,,,,,,,
+H:/DL2137_Yiting/Lab08/Lab08/Lab08.sim/sim_4/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+H:/DL2137_Yiting/Lab08/anode_decoder.sv,1603299065,systemVerilog,,H:/DL2137_Yiting/Lab07/bcd11.sv,,anode_decoder,,,,,,,,
+H:/DL2137_Yiting/Lab08/basys3.sv,1602777783,systemVerilog,,,,basys3,,,,,,,,
+H:/DL2137_Yiting/Lab08/disp.sv,1602777784,systemVerilog,,H:/DL2137_Yiting/Lab08/mux2.sv,,disp,,,,,,,,
+H:/DL2137_Yiting/Lab08/mux2.sv,1603298202,systemVerilog,,H:/DL2137_Yiting/Lab08/mux4.sv,,mux2,,,,,,,,
+H:/DL2137_Yiting/Lab08/mux4.sv,1603298441,systemVerilog,,H:/DL2137_Yiting/Lab08/sseg4.sv,,mux4,,,,,,,,
+H:/DL2137_Yiting/Lab08/sseg4.sv,1603336237,systemVerilog,,H:/DL2137_Yiting/Lab08/sseg4_manual.sv,,sseg4,,,,,,,,
+H:/DL2137_Yiting/Lab08/sseg4_manual.sv,1603331834,systemVerilog,,H:/DL2137_Yiting/Lab06/sseg_decoder.sv,,sseg4_manual,,,,,,,,
